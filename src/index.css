@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #10B981;
+  --color-hover: #34D399;
+  --color-text: #E2E8F0;
+  --color-background: #020617;
+
+  --font-sora: "Sora", serif; 
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -7,15 +7,16 @@ function Footer() {
     return (
         <div className="bg-text text-accent p-5">
             <div className="justify-between">
-                <div className="flex h-96">
-                    <h1 className="font-sora font-semibold text-7xl">
-                        Turning Ideas Into <span className="font-serif font-light italic">&nbsp;Digital&nbsp;</span> 
+                <div className="md:flex h-96 justify-between">
+                    <h1 className="font-sora font-semibold text-4xl md:text-5xl lg:text-6xl">
+                        Turning Ideas Into <br />
+                        <span className="font-serif font-light italic">&nbsp;Digital&nbsp;</span> 
                         Experiences.
                     </h1>
                     <img src={copyright} alt="" 
-                        className="h-36"/>
+                        className="h-36 md:h-24 lg:h-36"/>
                 </div>
-                <p className="max-w-4/5 text-lg font-medium mb-2">
+                <p className="md:max-w-4/5 text-sm md:text-lg md:font-medium mb-2">
                     Created by ammaryaas — thoughtfully crafted with passion, countless cups of coffee, late-night ideas, and probably less sleep than recommended. But also with a genuine love for creating meaningful digital experiences.
                 </p>
             </div>
@@ -23,7 +24,7 @@ function Footer() {
             {/* Line */}
             <div className="w-full h-0.5 bg-accent"></div>
 
-            <div className="flex mt-4 justify-between">
+            <div className="flex flex-col h-48 md:h-fit md:flex-row mt-4 justify-between">
                 <div>
                     <img src={logo} alt="Logo ammaryaas" />
                     <p>

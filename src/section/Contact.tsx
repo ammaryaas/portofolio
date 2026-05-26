@@ -91,7 +91,7 @@ const Contact = () => {
         <motion.div
             ref={ref}
             style={{ x: springX, y: springY }}  // ← gerak magnetic
-            className="bg-background w-full max-w-3xl mx-auto cursor-pointer border-3 border-accent rounded p-16 text-center"
+            className="bg-background w-5/6 max-w-3xl mx-auto cursor-pointer border-3 border-accent rounded p-16 text-center"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={handleMouseLeave}
             onMouseMove={handleMouseMove}
@@ -106,7 +106,7 @@ const Contact = () => {
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
                     >
-                        <h2 className="text-accent text-5xl font-bold leading-tight">
+                        <h2 className="text-accent text-3xl md:text-5xl font-bold leading-tight">
                             Got An Idea?<br />Let's Make It Real
                         </h2>
                     </motion.div>
@@ -123,8 +123,8 @@ const Contact = () => {
                         transition={{ duration: 0.3 }}
                     >
                         <TooltipFollow label="Copy email" copiedLabel="Copied!" onCopyRef={emailCopyRef}>
-                            <p className="text-accent text-4xl font-sora font-medium"
-                                onClick={() => copyToClipboard("ammar@email.com", emailCopyRef)}>
+                            <p className="text-accent text-2xl md:text-4xl font-sora font-medium"
+                                onClick={() => copyToClipboard("ammarizzatulhaq@gmail.com", emailCopyRef)}>
                                 ammarizzatulhaq@gmail.com
                             </p>
                         </TooltipFollow>
@@ -132,8 +132,8 @@ const Contact = () => {
                         <div className="w-16 h-px bg-accent/30" />
 
                         <TooltipFollow label="Copy number" copiedLabel="Copied!" onCopyRef={phoneCopyRef}>
-                            <p className="text-accent text-4xl font-sora font-medium"
-                                onClick={() => copyToClipboard("+62 812 3456 7890", phoneCopyRef)}>
+                            <p className="text-accent text-2xl md:text-4xl font-sora font-medium"
+                                onClick={() => copyToClipboard("+62 819 0204 1124", phoneCopyRef)}>
                                 +62 819 0204 1124
                             </p>
                         </TooltipFollow>

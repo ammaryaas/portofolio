@@ -53,8 +53,8 @@ const AnimatedText = ({ text }: { text: string }) => {
 
 function Hero() {
     return (
-        <div className="flex bg-text w-full h-screen items-end justify-center">
-            <div className="max-w-40 absolute left-70 top-40 text-xl/6">
+        <div className="bg-text flex flex-col-reverse md:flex-row w-full h-screen items-end md:justify-center">
+            <div className="hidden md:flex max-w-40 absolute left-70 top-35 text-xl/6">
                 <p>
                     <button
                         onClick={() => scrollTo("contacts")}
@@ -65,14 +65,14 @@ function Hero() {
                 </p>
             </div>
             <img src={profilePhoto} alt="Ammar Yassin"
-                className="h-135 absolute"
+                className="absolute h-120 md:h-135"
             />
-            <div className="w-full z-10">
-                <div className="flex justify-between text-background text-xl px-10">
+            <div className="flex flex-col w-full h-5/6 md:h-fit z-10 justify-between">
+                <div className="md:flex md:justify-between text-background text-xl px-10">
                     <p>Hey, I'm</p>
                     <p>a Data Enthusiast</p>
                 </div>
-                <h1 className="font-sora font-bold text-accent text-[170px] text-center leading-none">
+                <h1 className="font-sora font-bold text-accent text-7xl md:text-[110px] lg:text-[140px] xl:text-[160px] text-right px-5 md:text-center leading-none">
                     Ammar Yassin
                 </h1>
             </div>

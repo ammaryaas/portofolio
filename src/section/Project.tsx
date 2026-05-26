@@ -48,7 +48,7 @@ const latestProjects = [
 
 function Project() {
     return (
-        <div className="bg-background text-text py-8 px-16">
+        <div className="bg-background text-text py-8 px-8 md:px-16">
             <div>
                 <h3 className="text-teal-400 text-lg font-semibold mb-4">Ideas Brought to Life</h3>
                 <h2 className="text-5xl lg:text-6xl font-bold leading-none mb-16 max-w-3xl">
@@ -56,25 +56,25 @@ function Project() {
                 </h2>
             </div>
             {latestProjects.map((project) => (
-                <div className={`flex mb-10 ${project.odd ? "flex-row" : "flex-row-reverse"}`}>
-                    <div className="p-5 w-2/3">
-                        <img src={project.imgMain} alt="Landing Page Website Media Naraya Cipta" />
+                <div className={`flex flex-col-reverse mb-10 ${project.odd ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                    <div className="p-5 md:w-2/3">
+                        <img src={project.imgMain} alt={`Landing Page Website ${project.name} `}/>
                         <div className="flex gap-5 mt-5">
                             {project.img.map((image) => (
                                 <img src={image} alt=""
-                                    className="w-full h-48 object-cover" />
+                                    className="hidden lg:block w-[48.5%] object-cover" />
                             ))}
                         </div>
                     </div>
-                    <div className="p-5 w-1/3">
+                    <div className="p-5 md:w-1/3">
                         <div className="flex gap-3">
                             {project.label.map((skill) => (
-                                <div className="border border-text rounded-full text-xl px-4 py-1 w-fit">
+                                <div className="border border-text rounded-full text-sm md:text-md lg:text-xl px-4 py-1 w-fit">
                                     {skill}
                                 </div>
                             ))}
                         </div>
-                        <h4 className="text-5xl font-sora font-semibold mt-5 mb-1">
+                        <h4 className="text-3xl md:text-4xl lg:text-5xl font-sora font-semibold mt-5 mb-1">
                             {project.name}
                         </h4>
                         <p>
